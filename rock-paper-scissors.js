@@ -1,6 +1,6 @@
 function playRound(playerSelection, computerSelection){
     playerSelection = playerSelection.toLowerCase()
-    computerSelection = computerSelection.toLowerCase
+    computerSelection = computerSelection.toLowerCase()
     if (playerSelection === "rock" && computerSelection === "scissor"){
         return "You win!";
     } else if(playerSelection === "scissor" && computerSelection === "rock" ){
@@ -24,9 +24,11 @@ function playRound(playerSelection, computerSelection){
 
 function getComputerChoice(){
     let choices = ["rock","paper","scissor"]
-    choice = choices[Math.floor(Math.random * choices.length)]
+    choice = choices[Math.floor(Math.random() * choices.length)]
     return choice;
 }
 
 let playerSelection = prompt("What do you choose? Rock, Paper or Scissor?: ")
 let computerSelection = getComputerChoice()
+
+console.log(playRound(playerSelection,computerSelection));
