@@ -22,6 +22,11 @@ function playRound(playerSelection, computerSelection){
     return "It's a draw!";
 }
 
+function getComputerChoice(){
+    let choices = ["rock","paper","scissor"]
+    choice = choices[Math.floor(Math.random * choices.length)]
+    return choice;
+}
 
 let playerSelection = prompt("What do you choose? Rock, Paper or Scissor?: ")
 let computerSelection = getComputerChoice()
