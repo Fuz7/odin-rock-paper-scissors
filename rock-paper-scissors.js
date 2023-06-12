@@ -28,7 +28,14 @@ function getComputerChoice(){
     return choice;
 }
 
-let playerSelection = prompt("What do you choose? Rock, Paper or Scissor?: ")
-let computerSelection = getComputerChoice()
 
-console.log(playRound(playerSelection,computerSelection));
+function game(){
+    for (let i = 0;i < 5; i++){
+        let playerSelection = prompt("What do you choose? Rock, Paper or Scissor?: ")
+        let computerSelection = getComputerChoice()
+
+        console.log(playRound(playerSelection,computerSelection));
+
+    }
+}
+
