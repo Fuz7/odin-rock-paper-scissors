@@ -6,5 +6,45 @@ body{
 .container{
     width: 100%;
     height: 100vh;
-    background-color: gray
+    background-color: gray;
+    display: flex;
+}
+
+button > img{
+    width: 300px;
+    height: 270px;
+    cursor: pointer;
+}
+
+.playerScore,.computerScore{
+    height: 100%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 800;
+    font-size: 50px;
+    font-family: "Serif";
+}
+
+.playerScore{
+    background-color: #0066CC;
+}
+
+.computerScore{
+    margin-left: auto;
+    background-color: #73433d;
+}
+
+.imageContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.imageContainer > button:hover{
+    background-color: gray;
+    font-size: 50px;
+    font-weight: 800;
 }

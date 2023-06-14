@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="svg32847" viewBox="145.979 64.879 124.928 201.667" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <title id="title32935">Rock-Paper-Scissors</title>
+  <g id="layer1" transform="translate(-169.67 -397.84)">
+    <g id="imagebot_10" transform="matrix(1.231085, 0.0001, -0.0001, 1.231085, 295.820221, -673.738098)">
+      <path id="imagebot_18" style="stroke-linejoin:round;stroke:#000000;stroke-width:4.0614;stroke-linecap:round;fill:#ffffff" d="m89.471 1065.9c3.727 6.1-0.484 10-6.16 12.9-8.03 4.1-27.898 2.1-34.7-2-6.243-3.8-9.013-9.3-6.041-14.2"/>
+      <path id="imagebot_17" style="stroke-linejoin:round;stroke:#000000;stroke-width:4.0614;stroke-linecap:round;fill:#ffffff" d="m21.354 1021c-0.857 15.7 13.893 40.3 31.364 46.1 9.022 2.9 29.326 3.8 36.494-1.5 12.278-9 18.478-20.7 21.288-35.1 0.99-5.1 1.24-10.9 0.95-15.7-1.2892-17.564-14.828-27.886-20.606-31.93-0.182-11.45 0.977-25.25 2.816-38.22 2.751-19.4-24.341-14.51-26.732 3.69-1.119 8.52-3.056 15.51-5.109 34.59-3.145-10.28-8.431-25.04-10.205-35.24-2.925-16.83-27.057-6.74-23.048 13.76 2.731 13.96 7.07 24.24 9.739 37.54-2.806 2.21-16.056 5.71-16.951 22.01z"/>
+      <path id="imagebot_16" style="stroke-width:5.781;fill:#000000" d="m59.576 982.54c3.037 12.66 7.491 18.46 9.149 21.46-2.12-7.92-2.868-9.87-4.494-18.45-0.275-1.46-0.356-3.2-0.116-5.33l-4.539 2.32z"/>
+      <path id="imagebot_15" style="stroke-width:5.781;fill:#000000" d="m88.815 982.97c0.126 7.64 2.111 16.81 4.971 22.53-0.30609-8.2722-0.55595-14.803-1.0313-22.676-0.021 0-1.961 0.15-3.94 0.15z"/>
+      <path id="imagebot_14" style="stroke-linejoin:round;stroke:#000000;stroke-width:4.0614;stroke-linecap:round;fill:none" d="m79.642 1058.3c4.036-9.7 3.976-12.5 5.195-17.4"/>
+      <path id="imagebot_13" style="stroke-linejoin:round;stroke:#000000;stroke-width:4.0614;stroke-linecap:round;fill:none" d="m70.26 1059c1.693-11.5 1.425-17.2 1.856-24.9"/>
+      <path id="imagebot_12" style="stroke-linejoin:round;stroke:#000000;stroke-width:4.0614;stroke-linecap:round;fill:none" d="m59.041 1059.5c0.098-8-0.598-11.8-1.048-16.8"/>
+      <path id="imagebot_11" style="stroke-width:5.781;fill:#000000" d="m36.025 998.02c3.892 16.78-1.201 23.38-4.587 31.88 5.145-8.8 12.14-11.8 8.841-31.41l-4.254-0.47z"/>
+    </g>
+  </g>
+</svg>
