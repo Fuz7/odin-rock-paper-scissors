@@ -58,4 +58,3 @@ function game(){
     }
 }
 
-console.log(game())
