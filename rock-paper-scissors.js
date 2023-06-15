@@ -32,47 +32,60 @@ function getComputerChoice(){
 }
 
 
-function game(){
-    let playerCounter = 0;
-    let computerCounter = 0;
-    
-    
 
-    for (let i = 0;i < 5; i++){
-        let playerSelection = prompt("What do you choose? Rock, Paper or Scissor?: ")
-        let computerSelection = getComputerChoice()
-
-        console.log(playRound(playerSelection,computerSelection));
-        
-        let winner =(playRound(playerSelection,computerSelection))
-        
-        if (winner.includes("You win!")){
-            playerCounter ++;
-        } else if(winner.includes("You lose!")){
-            computerCounter ++;
-        }
-
-    }
-
-    if (playerCounter > computerCounter){
-        return "You won the game!"
-    } else if(computerCounter > playerCounter){
-        return ("You lose the game")
-    }else{
-        return "The game is draw!"
-    }
-}
 
 playerScore = document.getElementById('playerScore')
 computerScore = document.getElementById('computerScore')
 
 computerScore.textContent = "Score: 0"
-playerScore.textContent = "Score : 0"
+playerScore.textContent = "Score: 0"
+
+
+let gameRound = document.getElementsByName("option")
+
+let rounds = 0
+let playerCounter = 0;
+let computerCounter = 0;
+
+
+for (let i = 0; i < gameRound.length;i++){
+    gameRound[i].addEventListener('click',function(){
+        rounds = this.value
+        console.log(rounds)
+    })}
+
+let startButton = document.getElementById('startButton')
+startButton.addEventListener('click',function(){
+    if (rounds != 0){
+        startGame()
+    }
+})
+
+function startGame(){
+    document.getElementById('startPanel').style.display = "none"
+    document.getElementById('imageContainer').style.display = "flex"
+}
+
+function restartGame(){
+    for (let i = 0;i < gameRound.length; i++){
+        gameRound[i].checked = false;
+    }
+    document.getElementById('restartPanel').style.display = "none";
+    document.getElementById('startPanel').style.display = "flex";
+    document.getElementById('computerScore').textContent = "Score: 0";
+    document.getElementById('playerScore').textContent = "Score: 0";
+    rounds = 0;
+    playerCounter = 0;
+    computerCounter = 0;
+}
 
 
 const buttons = document.getElementsByClassName("button")
 
 function startClash(button){
+
+    let restartPanel = document.getElementById('restartPanel')
+
     let playerSelection = button.value;
     let computerSelection = getComputerChoice();
     
@@ -92,7 +105,8 @@ function startClash(button){
 
 
     playContainer.style.display = "flex"
-    
+
+
     let winner = playRound(playerSelection,computerSelection)
     if (winner.includes("You win!")){
         setTimeout(()=>{
@@ -105,7 +119,11 @@ function startClash(button){
             playContainer.innerHTML = ""
             playContainer.style.display = "none"
             imageContainer.style.display = "flex"
+            playerScore.textContent = "Score: " + playerCounter
         }, 1500);
+        playerCounter++;
+
+        
     } else if(winner.includes("You lose!")){
         setTimeout(()=>{
             playContainer.children[1].style.height = "0px"
@@ -117,7 +135,10 @@ function startClash(button){
             playContainer.innerHTML = ""
             playContainer.style.display = "none"
             imageContainer.style.display = "flex"
+            computerScore.textContent = "Score: " + computerCounter
         }, 1500);
+        computerCounter++;
+
     } else{
 
         setTimeout(()=>{
@@ -129,16 +150,30 @@ function startClash(button){
             imageContainer.style.display = "flex"
         }, 1300);
     }
+    if (playerCounter === parseInt(rounds)){
+        setTimeout(()=>{
+            imageContainer.style.display = "none"
+            document.getElementById('restartText').textContent = "You win!"
+            restartPanel.style.display = "flex"
+            },1501)}
 
-    
+    else if (computerCounter === parseInt(rounds)){
+        setTimeout(() =>{
+            imageContainer.style.display = "none"
+            document.getElementById("restartText").textContent = "You lose"
+            restartPanel.style.display = "flex"
+        }, 1501)}
 
 }
 
-function changeHeight(){
-}
+
 
 for(let i = 0; i < buttons.length; i++){
     buttons[i].addEventListener('click',function(){
         startClash(this)
     })
 }
+
+document.getElementById('restartButton').addEventListener('click',function(){
+    restartGame()
+})

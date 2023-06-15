@@ -40,7 +40,7 @@ button > img{
 }
 
 .imageContainer{
-    display: flex;
+    display: none;
     justify-content: space-around;
     flex: auto;
 }
@@ -104,3 +104,84 @@ button > img{
     background-color: red;
 }
 
+.startPanel,.restartPanel{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.startBox,.restartBox{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 300px;
+    width: 600px;
+    background-color: lightgray;
+    border: gray solid 7px;
+    padding: 5px 10px;
+}
+
+.startBox > h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.selection{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.selection > input[type=radio]{
+    display:none;
+}
+
+.selection > label{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: solid black 4px;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.selection > label:hover{
+    background-color: rgba(3, 165, 3, 0.35);
+}
+
+.selection > input:checked + label{
+    background-color: lightgreen;
+}
+
+.startButton,.restartButton{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-self: center;
+    box-sizing: border-box;
+    border: 3px solid black;
+    padding: 5px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.startButton:hover,.restartButton:hover{
+    background-color: lightgreen;
+}
+
+.restartBox{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.restartPanel{
+    display: none;
+}
+.restartBox > h1{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 0px;
+}

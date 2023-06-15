@@ -17,6 +17,22 @@
             </div>
         </div>
         
+        <div id="startPanel" class="startPanel">
+            <div class="startBox">
+                <h1>Rock-Paper-Scissors</h1>
+                <div id="selection" class="selection">
+                    <input id="5games" type="radio" name="option" value="5">
+                    <label for="5games">5 Games</label>
+                    <input id="7games" type="radio" name="option" value="7">
+                    <label for="7games">7 Games</label>
+                    <input id="10games" type="radio" name="option" value="10">
+                    <label for="10games">10 Games</label> 
+                </div>
+                <button id="startButton" class="startButton">Start</button>
+            </div>
+            
+        </div>
+
         <div id="imageContainer" class="imageContainer">
             <button value="rock" type="submit" class="button"><img src="static/rock.svg"><div>Rock</div></button>
             <button value="paper" id="middle" class="button" type="submit"><img src="static/paper.svg">Paper</button>
@@ -25,6 +41,13 @@
 
         <div id="playContainer" class="playContainer">
            
+        </div>
+
+        <div id="restartPanel" class="restartPanel">
+            <div id="restartBox" class="restartBox">
+                <h1 id="restartText" class="restartText" ></h1>
+                <button class="restartButton" id="restartButton">Restart</button>
+            </div>
         </div>
 
         <div id="computerScore" class="computerScore">Score : 2</div>
