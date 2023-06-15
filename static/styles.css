@@ -46,23 +46,61 @@ button > img{
 }
 
 .imageContainer > button{
-    flex: 1;
-}
-.imageContainer > button{
     transition: all 0.4s ease ;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid 4px black
+    border: solid 4px black;
+    flex: 1;
 }
+
+
 .imageContainer > button:hover{
     background-color: gray;
     font-size: 50px;
     font-weight: 800;
 }
 
-.imageContainer > .middle{
+.imageContainer > #middle{
     border: solid 2px black;
 }
+
+
+.playContainer{
+    display: none;
+    flex-direction: column;
+    flex-grow: 1;
+    align-self: center;
+    height: 100%;
+    position: relative;
+}
+
+.playContainer > button{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    height: 400px;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.playContainer > :nth-child(1){
+    rotate: 180deg;
+}
+
+.playContainer > button{
+    transition: all 1s ease;
+    pointer-events: none;
+    padding: 0;
+    margin: 0;
+}
+
+.playContainer > button:hover{
+    height: 0px;
+    background-color: red;
+}
+

@@ -5,23 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="/rock-paper-scissors.js"></script>
+    <script src="/rock-paper-scissors.js" defer ></script>
     <link rel="stylesheet" href="static/styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="playerScore">
+
+        <div id="playerScore" class="playerScore">
             <div>
                 Score : 3
             </div>
         </div>
-
-        <div class="imageContainer">
-            <button type="submit"><img src="static/rock.svg"><div>Rock</div></button>
-            <button class="middle" type="submit"><img src="static/paper.svg">Paper</button>
-            <button type="submit"><img src="static/scissor.svg">Scissor</button>
+        
+        <div id="imageContainer" class="imageContainer">
+            <button value="rock" type="submit" class="button"><img src="static/rock.svg"><div>Rock</div></button>
+            <button value="paper" id="middle" class="button" type="submit"><img src="static/paper.svg">Paper</button>
+            <button value="scissor" type="submit" class="button"><img src="static/scissor.svg">Scissor</button>
         </div>
-        <div class="computerScore">Score : 2</div>
+
+        <div id="playContainer" class="playContainer">
+           
+        </div>
+
+        <div id="computerScore" class="computerScore">Score : 2</div>
     </div>
 </body>
 </html>
